@@ -12,7 +12,7 @@ public class IngredientTypeParametrizedTest {
         this.type = type;
         this.name = name;
     }
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "{index} : type = {0}")
     public static Object[][] getData(){
         return new Object[][]{
                 {IngredientType.SAUCE, "SAUCE"},
